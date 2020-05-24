@@ -1,0 +1,103 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #2d2d2d;
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#time {
+	font-weight: 100;
+	font-size: 150px;
+	align-self: center;
+}
+
+#ms {
+	color: #919191;
+	font-size: 60%;
+}
+
+#buttons {
+	align-self: center;
+	margin-top: 80px;
+}
+
+#buttons button {
+	font-size: 30px;
+	background: none;
+	border: none;
+	width: 200px;
+	color: #4761c7;
+	transition: transform 0.05s ease;
+	user-select: none;
+	padding: 0;
+	height: 75px;
+	vertical-align: top;
+}
+
+#buttons button:focus {
+	border: none !important;
+}
+
+#buttons button::-moz-focus-inner {
+	border: 0;
+}
+
+#start {
+	outline: rgba(27.8%, 38%, 78%, 100%) 2px solid;
+	position: relative;
+}
+
+#buttons button:active {
+	transform: scale(0.95);
+}
+
+#buttons button:disabled {
+	opacity: 0.5;
+	transform: none;
+}
+
+#start .lbl {
+	position: absolute;
+	transition: opacity 0.15s ease;
+	opacity: 0;
+	transform: none;
+	top: 37px;
+	transform: translate(-50%, -50%);
+}
+
+body:not(.running):not(.paused) #start .start { opacity: 1; }
+body.running:not(.paused) #start .pause { opacity: 1; }
+body.running.paused #start span.resume { opacity: 1; }
+
+#reset {
+	color: #c33 !important;
+}
+
+footer {
+	flex-shrink: 0;
+	text-align: right;
+	font-size: 15px;
+	color: #9d9d9d;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px;
+}
+
+footer a { 
+	color: #4761c7;
+	text-decoration: none;
+}
