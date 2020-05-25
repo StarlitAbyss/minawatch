@@ -101,3 +101,16 @@ footer a {
 	color: #4761c7;
 	text-decoration: none;
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #2d2d2d;
+		color: white;
+	}
+
+	#ms {
+		color: #616161;
+		font-size: 60%;
+	}
+}
