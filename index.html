@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 	<head>
 		<link rel="stylesheet" href="main.css"/>
 		<link rel="icon" type="image/png" href="favicon.png" />
@@ -14,7 +14,7 @@
 			<div id="time"><span id=hms>00:00:00</span><span id="ms">.000</span></div>
 			<div id="buttons">
 				<button disabled id="reset" onclick="reset()">Reset</button>
-				<button id="start" onmousedown="if (event.button == 0) start();" autofocus="true" onblur="this.focus()">
+				<button id="start" onmousedown="if (event.button == 0) start();" autofocus onblur="this.focus()">
 					<span class="lbl start">Start</span>
 					<span class="lbl resume">Resume</span>
 					<span class="lbl pause">Pause</span>
@@ -25,6 +25,6 @@
 			<a href="https://github.com/okalachev/stopwatch">★ on GitHub</a>
 			<div>&copy; <a href="https://chev.me">Oleg Kalachev</a></div>
 		</footer>
-		<script type="text/javascript" src="main.js"></script>
+		<script src="main.js"></script>
 	</body>
 </html>
