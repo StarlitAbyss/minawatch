@@ -7,12 +7,11 @@
 		<meta name="keywords" content="online, stopwatch, hours, minutes, seconds, milliseconds, timer, time, онлайн, секундомер, таймер, время">
 		<meta property="og:title" content="Free Adless Online Stopwatch">
 		<meta property="og:image" content="logo.png">
-		<title>Stopwatch</title>
-		<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37286925 = new Ya.Metrika({ id:37286925, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37286925" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+		<title>Minawatch</title>
 	</head>
 	<body onkeydown="keyDown(event)">
 		<main>
-			<div id="time"><span id=hms>00:00:00</span><span id="ms">.000</span></div>
+			<div style="color:#ff00aa;font-family:vividly;text-align:left" id="time"><span id=hms>00:00:00</span></div>
 			<div id="buttons">
 				<button disabled id="reset" onclick="reset()">Reset</button>
 				<button id="start" onmousedown="if (event.button == 0) start();" autofocus onblur="this.focus()">
@@ -22,9 +21,7 @@
 				</button>
 			</div>
 		</main>
-		<footer>
-			<a href="https://github.com/okalachev/stopwatch">★ on GitHub</a>
-			<div>&copy; <a href="https://chev.me">Oleg Kalachev</a></div>
+
 		</footer>
 		<script src="main.js"></script>
 	</body>

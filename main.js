@@ -18,7 +18,6 @@ function update() {
 	var interval = updateTime - startTime + accumulated;
 	var d = new Date(interval);
 	hmsElem.innerText = `${pad(d.getUTCHours(), 2)}:${pad(d.getUTCMinutes(), 2)}:${pad(d.getSeconds(), 2)}`;
-	msElem.innerText = '.' + pad(d.getMilliseconds(), 3);
 }
 
 function start() {
