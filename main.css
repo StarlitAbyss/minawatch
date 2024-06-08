@@ -4,7 +4,7 @@ html, body {
 
 	@font-face {
 		font-family: 'vividly';
-		src: url('Vividly-Regular.otf');
+		src: url('Vividly-Regular.otf') format("opentype");
 }
 
 body {
@@ -28,6 +28,7 @@ main {
 	font-weight: 100;
 	font-size: 150px;
 	align-self: left;
+	margin-left: 50px;
 }
 
 #ms {
@@ -38,6 +39,7 @@ main {
 #buttons {
 	align-self: left;
 	margin-top: 80px;
+	margin-left: 50px;
 }
 
 #buttons button {
