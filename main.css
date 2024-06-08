@@ -11,7 +11,7 @@ head {
 body {
 	font-family: "vividly";
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	flex-direction: column;
 	color: #2d2d2d;
 	font-family: Helvetica, sans-serif;
@@ -21,14 +21,14 @@ body {
 main {
 	flex: 1;
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	flex-direction: column;
 }
 
 #time {
 	font-weight: 100;
 	font-size: 150px;
-	align-self: center;
+	align-self: left;
 }
 
 #ms {
@@ -37,7 +37,7 @@ main {
 }
 
 #buttons {
-	align-self: center;
+	align-self: left;
 	margin-top: 80px;
 }
 
