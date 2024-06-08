@@ -2,12 +2,11 @@ html, body {
 	height: 100%;
 }
 
-head {
 	@font-face {
 		font-family: 'vividly';
 		src: url('Vividly-Regular.otf');
-	}
 }
+
 body {
 	font-family: "vividly";
 	display: flex;
