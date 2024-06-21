@@ -66,7 +66,6 @@ main {
 	width: 200px;
 	color: #4761c7;
 	transition: transform 0.05s ease;
-	user-select: none;
 	padding: 0;
 	height: 75px;
 	vertical-align: top;
@@ -96,7 +95,7 @@ main {
 
 #start .lbl {
 	position: absolute;
-	transition: opacity 0.15s ease;
+	transition: opacity 0.15s ease; 
 	opacity: 0;
 	transform: none;
 	top: 37px;
