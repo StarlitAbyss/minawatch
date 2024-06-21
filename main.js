@@ -59,9 +59,9 @@ function setTime() {
   var setTimeValue = setTimeInput.value;
 
   // Check if input is valid format (HH:MM:SS)
-  var timeRegex = /^([0-1][0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])$/;
+  var timeRegex = /^([0-9][0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])$/;
   if (!timeRegex.test(setTimeValue)) {
-    alert("Invalid time format. Please enter HH:MM:SS");
+    alert("Invalid time format you silly goober. Please enter HH:MM:SS");
     return;
   }
 
