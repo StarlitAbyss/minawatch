@@ -24,6 +24,18 @@ main {
 	flex-direction: column;
 }
 
+#set-time {
+  display: flex; /* Make the container a flexbox */
+  align-items: center; /* Vertically center the content */
+    	margin-top: 80px;
+	margin-left: 50px;
+}
+
+#buttons button, #set-time button {
+  width: 100px;  
+  height: 40px;
+}
+
 #time {
 	font-weight: 100;
 	font-size: 150px;
