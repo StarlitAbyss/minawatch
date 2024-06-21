@@ -57,7 +57,7 @@ function keyDown(e) {
 function setTime() {
   var setTimeInput = document.getElementById('setTimeInput');
   var setTimeValue = setTimeInput.value;
-
+    reset();
   // Check if input is valid format (HH:MM:SS)
   var timeRegex = /^([0-9][0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])$/;
   if (!timeRegex.test(setTimeValue)) {
