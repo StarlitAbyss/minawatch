@@ -32,8 +32,13 @@ main {
 }
 
 #buttons button, #set-time button {
-  width: 100px;  
-  height: 40px;
+  width: 200px;
+  height: 45px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    	color: #4761c7;
+	transition: transform 0.05s ease;
 }
 
 #time {
