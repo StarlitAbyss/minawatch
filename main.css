@@ -13,7 +13,6 @@ body {
 	justify-content: left;
 	flex-direction: column;
 	color: #2d2d2d;
-	font-family: Helvetica, sans-serif;
 	margin: 0;
 }
 
@@ -25,10 +24,20 @@ main {
 }
 
 #set-time {
-  display: flex; /* Make the container a flexbox */
-  align-items: center; /* Vertically center the content */
-    	margin-top: 80px;
+  display: flex; /
+  align-items: center; 
+    	margin-top: 10px;
 	margin-left: 50px;
+}
+
+#set-time button {
+outline: #616161 2px solid
+}
+
+#set-time input {
+  width: 204px; 
+        	outline: #616161 2px solid
+
 }
 
 #buttons button, #set-time button {
@@ -36,9 +45,11 @@ main {
   height: 45px;
     font-size: 30px;
     background: none;
-    border: none;
-    	color: #4761c7;
-	transition: transform 0.05s ease;
+    	color: #919191;
+
+    transition: outline 0.15s ease;
+    background: linear-gradient(to bottom, #333 0%, #222 100%);
+    
 }
 
 #time {
@@ -46,6 +57,8 @@ main {
 	font-size: 150px;
 	align-self: left;
 	margin-left: 50px;
+    	margin-top: 50px;
+    
 }
 
 #ms {
@@ -55,8 +68,9 @@ main {
 
 #buttons {
 	align-self: left;
-	margin-top: 80px;
+	margin-top: 50px;
 	margin-left: 50px;
+    
 }
 
 #buttons button {
@@ -69,6 +83,7 @@ main {
 	padding: 0;
 	height: 75px;
 	vertical-align: top;
+    background: linear-gradient(to bottom, #333 0%, #222 100%);
 }
 
 #buttons button:focus {
@@ -82,6 +97,7 @@ main {
 #start {
 	outline: rgba(27.8%, 38%, 78%, 100%) 2px solid;
 	position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
 }
 
 #buttons button:active {
@@ -108,6 +124,7 @@ body.running.paused #start span.resume { opacity: 1; }
 
 #reset {
 	color: #c33 !important;
+    	outline: #c33 2px solid;
 }
 
 footer {
