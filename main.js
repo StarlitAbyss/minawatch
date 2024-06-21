@@ -53,3 +53,27 @@ function keyDown(e) {
 		start();
 	}
 }
+
+function setTime() {
+  var setTimeInput = document.getElementById('setTimeInput');
+  var setTimeValue = setTimeInput.value;
+
+  // Check if input is valid format (HH:MM:SS)
+  var timeRegex = /^([0-1][0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])$/;
+  if (!timeRegex.test(setTimeValue)) {
+    alert("Invalid time format. Please enter HH:MM:SS");
+    return;
+  }
+
+  // Parse the time into milliseconds
+  var parts = setTimeValue.split(':');
+  var milliseconds = (parseInt(parts[0], 10) * 3600 * 1000) + 
+                    (parseInt(parts[1], 10) * 60 * 1000) + 
+                    (parseInt(parts[2], 10) * 1000);
+
+  // Update accumulated time and reset display
+  accumulated = milliseconds;
+  update();
+  resetElem.disabled = false; // Enable reset button
+}
+
